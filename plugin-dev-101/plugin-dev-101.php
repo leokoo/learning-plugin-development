@@ -9,7 +9,7 @@ Author URI: https://www.wpstarters.com
 */
 
 function pd101_sample_function( $content ){
-	$content .= 'test';
+	$content = str_replace( 'Louis Freeh', 'John Doe', $content );
 
 	return $content;
 }
