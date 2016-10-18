@@ -9,9 +9,10 @@ Author URI: https://www.wpstarters.com
 */
 
 function pd101_sample_function(){
-	echo 'This is our site header';
+	echo 'We saved a post';
+	exit;
 
 }
-add_action( 'wp_head', 'pd101_sample_function' );
+add_action( 'save_post', 'pd101_sample_function' );
 
 ?>
