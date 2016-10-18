@@ -8,11 +8,10 @@ Version: 1.0
 Author URI: https://www.wpstarters.com
 */
 
-function pd101_sample_function( $content ){
-	$content = str_replace( 'Louis Freeh', 'John Doe', $content );
+function pd101_sample_function(){
+	echo 'This is our site header';
 
-	return $content;
 }
-add_filter( 'the_content', 'pd101_sample_function');
+add_action( 'wp_head', 'pd101_sample_function' );
 
 ?>
