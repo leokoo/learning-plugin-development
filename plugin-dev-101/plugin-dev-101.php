@@ -8,8 +8,8 @@ Version: 1.0
 Author URI: https://www.wpstarters.com
 */
 
-function pd101_sample_function(){
-	echo 'We saved a post';
+function pd101_sample_function( $post_id ){
+	echo 'We saved postID' . $post_id;
 	exit;
 
 }
