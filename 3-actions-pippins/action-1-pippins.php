@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: Action 1 Pippins
+ * Plugin Name: 3-Action 1 Pippins
  * Plugin URI: https://github.com/leokoo/learning-plugin-development
  * Description: Learning plugin development Pippin's plugin development 101
  * Version: 1.0

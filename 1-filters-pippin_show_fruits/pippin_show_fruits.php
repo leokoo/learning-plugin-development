@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: Pippin Show Fruits
+ * Plugin Name: 1-Pippin Show Fruits
  * Plugin URI: https://github.com/leokoo/learning-plugin-development
  * Description: Learning plugin development Pippin's plugin development 101
  * Version: 1.0
