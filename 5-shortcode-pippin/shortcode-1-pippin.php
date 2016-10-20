@@ -30,7 +30,7 @@ function pd101_message_shortcode( $atts ) {
 		$atts
 		);
 
-		return '<div class="message ' . $a['color'] . '">' . $a['text'] . '</div>';
+		return '<div class="message ' . esc_attr( $a['color'] ) . '">' . esc_html( $a['text'] ) . '</div>';
 }
 add_shortcode( 'message', 'pd101_message_shortcode' ) ;
 ?>
