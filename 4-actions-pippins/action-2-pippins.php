@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Plugin Development 101
+Plugin Name: Actions Pippins 2
 Plugin URI: https://github.com/leokoo/learning-plugin-development
 Description: Following Pippin's Lessons on his site
 Author: Leo Koo
