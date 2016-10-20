@@ -17,8 +17,8 @@ Author URI: https://www.wpstarters.com
 */
 
 function pd101_load_styles() {
-	wp_enqueue_style( 'pd101-styles', plugins_url( 'css/pd101-styles.css', __FILE__ ) );
-	wp_enqueue_script( 'pd101-scripts', plugins_url( 'js/pd101-scripts.js', __FILE__ ), array( 'jquery' ), '1.0' );
+	wp_enqueue_style( 'pd101-styles', plugins_url( 'includes/css/pd101-styles.css', __FILE__ ) );
+	wp_enqueue_script( 'pd101-scripts', plugins_url( 'includes/js/pd101-scripts.js', __FILE__ ), array( 'jquery' ), '1.0' );
 }
 add_action( 'wp_enqueue_scripts', 'pd101_load_styles' );
 
