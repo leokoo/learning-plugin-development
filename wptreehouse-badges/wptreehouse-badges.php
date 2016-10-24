@@ -247,15 +247,4 @@ function wptreehouse_badges_frontend_scripts_and_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'wptreehouse_badges_frontend_scripts_and_styles' );
 
-
-
-
-
-
-
-
-
-
-
-
 ?>
