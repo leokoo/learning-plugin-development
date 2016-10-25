@@ -18,11 +18,22 @@ function boj_custom_home_page_posts( $results ) {
     if ( is_home() ) {
 
         /* Posts per page. */
+        // https://developer.wordpress.org/reference/functions/get_option/
         $per_page = get_option( 'posts_per_page' );
 
         /* Get the current page. */
+        // https://codex.wordpress.org/Function_Reference/get_query_var
         $paged = get_query_var( 'paged' );
 
+        /* Ternary operators
+        $items =
+        // if this expression is true
+            (isset($_POST['items'])) 
+        // then "$_POST['items']" is assigned to $items
+            ? $_POST['items'] 
+        // else "array()" is assigned
+            : array();
+        */
         /* Set the $page variable. */
         $page = ( ( 0 == $paged || 1 == $paged ) ? 1 : absint( $paged ) );
 
