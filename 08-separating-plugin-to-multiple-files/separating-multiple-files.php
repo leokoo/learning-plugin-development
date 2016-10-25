@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: 8-Separating Multiple Files
+Plugin Name: 08-Separating Multiple Files
 Plugin URI: https://github.com/leokoo/learning-plugin-development
 Description: Learning to separate the plugins to multiple files and also learning to define an absolute plugin path
 Author: Leo Koo

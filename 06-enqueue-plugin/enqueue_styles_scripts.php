@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: 6-Enqueue Styles and Scripts
+Plugin Name: 06-Enqueue Styles and Scripts
 Plugin URI: https://github.com/leokoo/learning-plugin-development
 Description: Learning how to enqueue styles and scripts
 Author: Leo Koo

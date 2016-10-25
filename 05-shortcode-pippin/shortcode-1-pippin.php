@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: 5-Shortcode 1
+Plugin Name: 05-Shortcode 1
 Plugin URI: https://github.com/leokoo/learning-plugin-development
 Description: Lessons in shortcode development
 Author: Leo Koo

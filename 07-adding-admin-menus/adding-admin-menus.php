@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: 7-Adding Admin Menu
+Plugin Name: 07-Adding Admin Menu
 Plugin URI: https://github.com/leokoo/learning-plugin-development
 Description: Lessons in adding admin menus
 Author: Leo Koo

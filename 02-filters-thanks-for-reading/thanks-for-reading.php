@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: 2-Thanks for Reading
+ * Plugin Name: 02-Thanks for Reading
  * Plugin URI: https://github.com/leokoo/learning-plugin-development
  * Description: Learning plugin development from hardcoreWP as part of the Pippin's plugin development 101
  * Version: 1.0
