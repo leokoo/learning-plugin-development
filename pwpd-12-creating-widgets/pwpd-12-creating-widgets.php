@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: PWPD 12 - Creating a custom widget
+Plugin Name: PWPD 12v2 - Creating my own custom widget
 Plugin URI: https://github.com/leokoo/learning-plugin-development
 Description: A simple plugin on creating a custom widget on WordPress
 Author: Leo Koo
@@ -9,15 +9,12 @@ Author URI: https://www.wpstarters.com
 License: GPLv2
 */
 
-
-
-// use widgets_init action hook to execute custom function
-add_action( 'widgets_init', 'boj_widgetexample_register_widgets' );
-
  //register our widget
 function boj_widgetexample_register_widgets() {
     register_widget( 'boj_widgetexample_widget_my_info' );
 }
+// use widgets_init action hook to execute custom function
+add_action( 'widgets_init', 'boj_widgetexample_register_widgets' );
 
 //boj_widget_my_info class
 class boj_widgetexample_widget_my_info extends WP_Widget {
