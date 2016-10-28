@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: PWPD 12v2 - Creating my own custom widget
+Plugin Name: PWPD 12 - Creating a custom widget
 Plugin URI: https://github.com/leokoo/learning-plugin-development
 Description: A simple plugin on creating a custom widget on WordPress
 Author: Leo Koo
@@ -27,6 +27,21 @@ class boj_widgetexample_widget_my_info extends WP_Widget {
 			); 
         $this->WP_Widget( 'boj_widgetexample_widget_my_info', 'My Info Widget', $widget_ops );
     }
+
+	    //display the widget
+    function widget($args, $instance) {
+        extract($args);
+ 
+        echo $before_widget;
+        $title = apply_filters( 'widget_title', $instance['title'] );
+        $movie = empty( $instance['movie'] ) ? '&nbsp;' : $instance['movie'];
+        $song = empty( $instance['song'] ) ? '&nbsp;' : $instance['song']; 
+ 
+        if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
+        echo '<p>Fav Movie: ' . $movie . '</p>';
+        echo '<p>Fav Song: ' . $song . '</p>';
+        echo $after_widget;
+    }
  
      //build the widget settings form
     function form($instance) {
@@ -52,20 +67,7 @@ class boj_widgetexample_widget_my_info extends WP_Widget {
         return $instance;
     }
  
-    //display the widget
-    function widget($args, $instance) {
-        extract($args);
- 
-        echo $before_widget;
-        $title = apply_filters( 'widget_title', $instance['title'] );
-        $movie = empty( $instance['movie'] ) ? '&nbsp;' : $instance['movie'];
-        $song = empty( $instance['song'] ) ? '&nbsp;' : $instance['song']; 
- 
-        if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
-        echo '<p>Fav Movie: ' . $movie . '</p>';
-        echo '<p>Fav Song: ' . $song . '</p>';
-        echo $after_widget;
-    }
+
 }
 
 ?>
