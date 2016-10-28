@@ -18,17 +18,12 @@ class Leos_Widget extends WP_Widget {
      * Register widget with WordPress.
      */
     public function __construct() {
-        // actual widget processes
-        public function __construct() {
         parent::__construct(
             'leos_widget', // Base ID
             'Leos_Widget', // Name
             array( 'description' => __( 'A Foo Widget', 'text_domain' ), ) // Args
         );
     }
-
-    }
-    add_action( 'widgets_init', function() { register_widget( 'Leos_Widget' ); } );
  
     /**
      * Front-end display of widget.
@@ -70,5 +65,7 @@ class Leos_Widget extends WP_Widget {
 
     }
 } // class Leos_Widget
+
+add_action( 'widgets_init', function() { register_widget( 'Leos_Widget' ); } );
 
 ?>
