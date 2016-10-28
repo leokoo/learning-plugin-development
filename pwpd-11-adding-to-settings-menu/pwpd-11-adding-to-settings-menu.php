@@ -9,7 +9,7 @@ Author URI: https://www.wpstarters.com
 License: GPLv2
 */
 
-add_action( 'admin_menu', 'boj_menuexample_create_menu' );
+
 
 function boj_menuexample_create_menu() {
 	
@@ -17,5 +17,6 @@ function boj_menuexample_create_menu() {
 	add_options_page( 'Leo Plugin Settings Page', 'Menu Example Settings', 'manage_options', 'settings-submenu', 'boj_menuexample_settings_page' );
 	
 }
+add_action( 'admin_menu', 'boj_menuexample_create_menu' );
 
 ?>
