@@ -66,8 +66,6 @@ class boj_widgetexample_widget_my_info extends WP_Widget {
  
         return $instance;
     }
- 
-
 }
 
 ?>
